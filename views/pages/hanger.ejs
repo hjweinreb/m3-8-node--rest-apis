@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<h1>Welcome to hangman</h1>
+<h2>Your word has X letters</h2>
+<h3>Enter Your guess below</h3>
+<form method="post" action="/getguess">
+    <label for="letterguess">Guess letter:</label><br>
+    <input type="text" id="guess" name="guess"><br>
+    <input type="submit" value="Submit">
+</form>
+<h2> The word has this many letters: <%=currentWordLength%> <%=letterSpots%> </h2>
+<h2> The letter you entered: <%=enteredLetter%> </h2>
+
+
+</html>
